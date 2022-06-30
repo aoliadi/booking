@@ -1,4 +1,5 @@
 import Header from "../../components/Header/Header";
+import Main from "../../components/Main/Main";
 import Navbar from "../../components/Navbar/Navbar";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <div className="">
       <Navbar />
       <Header />
+      <Main />
     </div>
   );
 };

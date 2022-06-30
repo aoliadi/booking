@@ -1,0 +1,14 @@
+.container {
+  /* border: 1px solid #000; */
+}
+
+.list__container {
+  composes: grid from "../../general.module.css";
+  border: 1px solid red;
+
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.list__item {
+  border: 1px solid #000;
+}

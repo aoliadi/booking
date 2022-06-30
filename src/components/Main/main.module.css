@@ -1,0 +1,8 @@
+.container {
+  composes: container flex from "../../general.module.css";
+  flex-flow: column wrap;
+  gap: 2rem;
+  padding: 5rem 0;
+  border: 1px dotted blue;
+  height: 100vh;
+}
