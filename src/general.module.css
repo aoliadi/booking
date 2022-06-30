@@ -20,7 +20,8 @@
 }
 
 .btn {
-  composes: text-primary from "./colors.module.css";
+  @value primary from "./colors.module.css";
+  color: primary;
   padding: 5px 10px;
   text-transform: capitalize;
 }

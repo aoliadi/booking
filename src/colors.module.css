@@ -1,10 +1,2 @@
 @value primary: #003580;
 @value secondary: #fff;
-
-.text-primary {
-  color: primary;
-}
-
-.text-secondary {
-  color: secondary;
-}

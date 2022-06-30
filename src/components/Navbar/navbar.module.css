@@ -1,12 +1,15 @@
 .container {
   composes: flex from "../../general.module.css";
+  @value primary from "../../colors.module.css";
+
   min-height: 50px;
-  background-color: #003580;
+  background-color: primary;
 }
 
 .list_container {
+  @value secondary from "../../colors.module.css";
   composes: container grid from "../../general.module.css";
-  composes: text-secondary from "../../colors.module.css";
+  color: secondary;
   padding: 10px;
 
   grid-template-columns: repeat(2, 100px);
