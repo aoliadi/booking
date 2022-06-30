@@ -10,7 +10,6 @@
   @value secondary from "../../colors.module.css";
   composes: container grid from "../../general.module.css";
   color: secondary;
-  padding: 10px;
 
   grid-template-columns: repeat(2, 100px);
   gap: 1.25rem;
@@ -30,8 +29,6 @@
   .list_container {
     grid-template-columns: 1fr repeat(2, fit-content(50px));
     justify-items: end;
-
-    padding: 20px;
   }
 
   .fullwidth {

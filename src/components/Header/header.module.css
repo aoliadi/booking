@@ -1,0 +1,55 @@
+@value primary, secondary, btn2 from "../../colors.module.css";
+
+.container {
+  composes: flex from "../../general.module.css";
+  flex-flow: column wrap;
+  background-color: primary;
+  color: secondary;
+  /* padding-top: 20px; */
+  padding-bottom: 100px;
+}
+
+.list__container {
+  composes: container flex from "../../general.module.css";
+  flex-flow: row wrap;
+  /* border: 1px solid #000; */
+  margin-bottom: 1rem;
+  gap: 2.5rem;
+}
+
+@media (max-width: 700px) {
+  .list__container {
+    /* border: 1px solid white; */
+  }
+}
+
+.list__item {
+  composes: flex from "../../general.module.css";
+  gap: 0.5rem;
+
+  align-items: center;
+}
+
+.active {
+  @value primary from "../../colors.module.css";
+  border: 1px solid secondary;
+  padding: 0.625rem;
+  border-radius: 1.25rem;
+}
+
+.heading {
+  /* border: 1px solid #000; */
+  composes: container from "../../general.module.css";
+}
+
+.desc {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  composes: btn from "../../general.module.css";
+  background-color: btn2;
+  color: secondary;
+  font-weight: 500;
+}
