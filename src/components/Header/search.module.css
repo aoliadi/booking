@@ -1,6 +1,7 @@
 @value primary, secondary, blue2, yellow as col1, gray as col2 from "../../colors.module.css";
 
 .container {
+  z-index: 2;
   composes: container flex from "../../general.module.css";
   position: relative;
   align-items: center;
@@ -54,7 +55,7 @@ input::placeholder {
   position: absolute;
   top: 70px;
   font-size: 13px;
-  padding: 0.5rem;
+  padding: 1rem 1.5rem;
   margin-top: 0.05rem;
 }
 

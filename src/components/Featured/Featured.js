@@ -1,21 +1,68 @@
 import featured from "./featured.module.css";
 
 function Featured() {
+  const featuredListItems = [
+    {
+      name: "Jieshou",
+      quantity: 39,
+    },
+    {
+      name: "Haljala",
+      quantity: 28,
+    },
+    {
+      name: "Mityana",
+      quantity: 50,
+    },
+    {
+      name: "Tasböget",
+      quantity: 24,
+    },
+    {
+      name: "Milano",
+      quantity: 16,
+    },
+    {
+      name: "Ekpoma",
+      quantity: 17,
+    },
+    {
+      name: "Lào Cai",
+      quantity: 23,
+    },
+    {
+      name: "Odivelas",
+      quantity: 42,
+    },
+    {
+      name: "Marttila",
+      quantity: 25,
+    },
+    {
+      name: "Alua",
+      quantity: 40,
+    },
+  ];
+
   return (
     <section className={featured.container}>
       <ul className={featured.list__container}>
-        <li className={featured.list__item}>
-          <img src="" alt="" className={featured.list__img} />
-          <div className={featured.list__label}>
-            <h1 className={featured.list__title}>Dublin</h1>
-            <h2 className={featured.list__desc}>123 properties</h2>
-          </div>
-        </li>
-        <li className={featured.list__item}>one box</li>
-        <li className={featured.list__item}>one box</li>
-        <li className={featured.list__item}>one box</li>
+        {featuredListItems.map((item, index) => (
+          <li className={featured.list__item} key={index}>
+            <img
+              src=""
+              alt=""
+              width="100%"
+              height="100%"
+              className={featured.list__img}
+            />
+            <div className={featured.list__label}>
+              <h1 className={featured.list__title}>{item.name}</h1>
+              <h2 className={featured.list__desc}>{item.quantity}</h2>
+            </div>
+          </li>
+        ))}
       </ul>
-      <div className=""></div>
     </section>
   );
 }
