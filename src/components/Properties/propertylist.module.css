@@ -1,0 +1,37 @@
+.container {
+}
+
+.heading {
+  font-size: 20px;
+}
+
+.list__container {
+  composes: flex from "../../general.module.css";
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+
+.list__item:first-of-type {
+  width: 100%;
+}
+
+.list__item:not(:first-of-type) {
+  flex: 1;
+  min-width: 150px;
+  max-width: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.img {
+}
+
+.type {
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-block: 0.25rem;
+}
+
+.quantity {
+  font-size: 14px;
+}

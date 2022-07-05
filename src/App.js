@@ -1,4 +1,3 @@
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Hotel from "./pages/hotels/Hotel";
@@ -9,8 +8,8 @@ import Header from "./components/Header/Header";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <Header />
+      {/* <Navbar /> */}
+      {/* <Header /> */}
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/hotels" element={<Hotel />}></Route>
