@@ -1,0 +1,70 @@
+@value primary, secondary, gray from "../../colors.module.css";
+
+.container {
+}
+
+.list__container {
+  composes: list__container from "../Properties/propertylist.module.css";
+  row-gap: 3rem;
+}
+
+.list__item {
+  /* border: 1px solid #000; */
+  text-align: center;
+  composes: list__item from "../Properties/propertylist.module.css";
+}
+
+@media (min-width: 435px) {
+  .list__item {
+    text-align: left;
+  }
+}
+
+.list__item:not(:first-of-type) {
+  min-width: 200px;
+  max-width: 250px;
+}
+
+.caption {
+  composes: flex from "../../general.module.css";
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.location {
+  font-weight: 300;
+}
+
+.price {
+  font-weight: 500;
+}
+
+.rating {
+  margin-inline: auto;
+  composes: flex from "../../general.module.css";
+  align-items: center;
+  gap: 0.65rem;
+}
+
+@media (min-width: 435px) {
+  .rating {
+    margin: 0;
+  }
+}
+
+.rating > span {
+  background-color: primary;
+  color: secondary;
+  padding: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.rating > p {
+  font-size: 14px;
+  text-transform: capitalize;
+}

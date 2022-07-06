@@ -1,6 +1,7 @@
 import main from "./main.module.css";
 import Featured from "../Featured/Featured";
 import PropertyList from "../Properties/PropertyList";
+import FeaturedProps from "../FeaturedProps/FeaturedProps";
 
 function Main() {
   return (
@@ -8,7 +9,7 @@ function Main() {
       <Featured />
       <PropertyList />
       {/* <h1>a</h1> */}
-      {/* <Featured /> */}
+      <FeaturedProps />
     </main>
   );
 }
