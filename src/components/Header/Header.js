@@ -70,7 +70,7 @@ function Header({ type }) {
   return (
     <header
       className={
-        type == "hotels" ? header.container_list_mode : header.container
+        type === "hotels" ? header.container_list_mode : header.container
       }
     >
       <ul className={header.list__container}>
@@ -95,7 +95,7 @@ function Header({ type }) {
           <span className="">Airport taxis</span>
         </li>
       </ul>
-      {type == "hotels" || (
+      {type === "hotels" || (
         <>
           <article className={header.heading}>
             <h1 className={header.title}>
