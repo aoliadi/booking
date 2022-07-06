@@ -1,6 +1,7 @@
 .container {
   composes: container flex from "../../general.module.css";
+  max-width: calc(1024px + 64px);
   flex-flow: column wrap;
   gap: 2rem;
-  padding: 5rem 0;
+  padding: 5rem 32px;
 }
