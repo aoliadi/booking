@@ -1,0 +1,43 @@
+@value secondary from "../../colors.module.css";
+
+.container {
+  composes: container flex from "../../general.module.css";
+  text-align: center;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.container > * {
+  /* border: 1px solid #000; */
+}
+
+.heading {
+  margin-bottom: 0.25rem;
+}
+
+.input {
+  width: 300px;
+  height: 30px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.btn {
+  composes: btn from "../../general.module.css";
+  background-color: #0071c2;
+  color: secondary;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.small {
+  font-size: 13px;
+  display: block;
+  text-align: left;
+  margin-top: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}

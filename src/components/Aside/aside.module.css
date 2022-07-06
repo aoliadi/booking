@@ -1,0 +1,6 @@
+@value primary, secondary from "../../colors.module.css";
+
+.container {
+  background-color: primary;
+  color: secondary;
+}

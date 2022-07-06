@@ -1,4 +1,5 @@
 .container {
-  border: 1px solid red;
+  composes: grid from "../../general.module.css";
   height: 20vh;
+  place-items: center;
 }

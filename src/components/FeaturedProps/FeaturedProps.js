@@ -49,7 +49,7 @@ function FeaturedProps() {
     <section className={featured.container}>
       <ul className={featured.list__container}>
         <li className={featured.list__item}>
-          <h2 className={featured.heading}>Browse by property type</h2>
+          <h2 className={featured.heading}>Houses guests love</h2>
         </li>
         {propertyListItems.map(
           ({ reviews, rating, location, name, price }, index) => {

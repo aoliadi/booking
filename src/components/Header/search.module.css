@@ -16,6 +16,9 @@
 
 .list__container {
   composes: flex from "../../general.module.css";
+  flex-flow: row wrap;
+  gap: 1rem;
+
   width: 100%;
   justify-content: space-around;
 }

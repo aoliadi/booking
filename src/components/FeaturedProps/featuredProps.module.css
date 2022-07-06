@@ -3,9 +3,13 @@
 .container {
 }
 
+.heading {
+  composes: heading from "../Properties/propertylist.module.css";
+}
+
 .list__container {
   composes: list__container from "../Properties/propertylist.module.css";
-  row-gap: 3rem;
+  /* row-gap: 3rem; */
 }
 
 .list__item {

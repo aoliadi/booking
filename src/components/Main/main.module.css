@@ -3,5 +3,7 @@
   max-width: calc(1024px + 64px);
   flex-flow: column wrap;
   gap: 2rem;
-  padding: 5rem 32px;
+  padding-inline: 32px;
+  padding-block-start: 5rem;
+  padding-block-end: 3.5rem;
 }

@@ -5,12 +5,13 @@ import FeaturedProps from "../FeaturedProps/FeaturedProps";
 
 function Main() {
   return (
-    <main className={main.container}>
-      <Featured />
-      <PropertyList />
-      {/* <h1>a</h1> */}
-      <FeaturedProps />
-    </main>
+    <div className="">
+      <main className={main.container}>
+        <Featured />
+        <PropertyList />
+        <FeaturedProps />
+      </main>
+    </div>
   );
 }
 
