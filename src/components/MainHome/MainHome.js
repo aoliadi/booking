@@ -1,9 +1,9 @@
-import main from "./main.module.css";
+import main from "./mainhome.module.css";
 import Featured from "../Featured/Featured";
 import PropertyList from "../Properties/PropertyList";
 import FeaturedProps from "../FeaturedProps/FeaturedProps";
 
-function Main() {
+function MainHome() {
   return (
     <div className="">
       <main className={main.container}>
@@ -15,4 +15,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default MainHome;

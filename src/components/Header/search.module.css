@@ -1,4 +1,4 @@
-@value primary, secondary, blue2, yellow as col1, gray as col2 from "../../colors.module.css";
+@value primary, secondary, blue2, gray as col2 from "../../colors.module.css";
 
 .container {
   z-index: 2;
@@ -6,7 +6,7 @@
   position: relative;
   align-items: center;
   background-color: secondary;
-  border: 3px solid col1;
+  outline: 2px solid primary;
   border-radius: 5px;
   position: absolute;
   bottom: 0;

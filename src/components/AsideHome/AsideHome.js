@@ -1,7 +1,7 @@
 import MailList from "../MailList/MailList";
-import aside from "./aside.module.css";
+import aside from "./asidehome.module.css";
 
-function Aside() {
+function AsideHome() {
   return (
     <aside className={aside.container}>
       <MailList />
@@ -9,4 +9,4 @@ function Aside() {
   );
 }
 
-export default Aside;
+export default AsideHome;

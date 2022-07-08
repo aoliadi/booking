@@ -31,7 +31,7 @@
 .btn {
   @value primary from "./colors.module.css";
   color: primary;
-  padding: 5px 10px;
+  padding: 0.45rem 1rem;
   text-transform: capitalize;
   font-weight: 500;
 }
