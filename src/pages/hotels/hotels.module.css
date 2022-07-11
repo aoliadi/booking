@@ -1,0 +1,20 @@
+.flex {
+  composes: container flex from "../../general.module.css";
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+
+flex > * {
+  min-width: 350px;
+}
+
+.flex > Aside {
+  flex: 1;
+}
+
+.flex > Main {
+  flex: 3;
+  height: 200vh;
+}

@@ -1,6 +1,6 @@
-import AsideHome from "../../components/AsideHome/AsideHome";
+import Aside from "../../components/AsideHome/AsideHome";
 import Header from "../../components/Header/Header";
-import MainHome from "../../components/MainHome/MainHome";
+import Main from "../../components/MainHome/MainHome";
 import Navbar from "../../components/Navbar/Navbar";
 
 const Home = () => {
@@ -8,8 +8,8 @@ const Home = () => {
     <div className="">
       <Navbar />
       <Header />
-      <MainHome />
-      <AsideHome />
+      <Main />
+      <Aside />
     </div>
   );
 };

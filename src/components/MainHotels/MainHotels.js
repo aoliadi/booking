@@ -1,7 +1,11 @@
 import main from "./mainhotels.module.css";
 
 function MainHotels() {
-  return <div>MainHotels</div>;
+  return (
+    <main className={main.container}>
+      <section className="">MAIN</section>
+    </main>
+  );
 }
 
 export default MainHotels;

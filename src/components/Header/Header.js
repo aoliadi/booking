@@ -17,16 +17,17 @@ import { useState } from "react";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 import { format } from "date-fns";
+import { useNavigate } from "react-router-dom";
 
 function Header({ type }) {
   const [showCalendar, setShowCalendar] = useState(false);
   const [showOptions, setShowOptions] = useState(false);
+  const [destination, setDestination] = useState("");
   const [options, setOptions] = useState({
     adult: 1,
     children: 0,
     room: 1,
   });
-
   const [date, setDate] = useState([
     {
       startDate: new Date(),
@@ -34,6 +35,7 @@ function Header({ type }) {
       key: "selection",
     },
   ]);
+  const navigate = useNavigate();
 
   const handleOptionBtn = (type, action) => {
     switch (action) {
@@ -65,6 +67,10 @@ function Header({ type }) {
       children: 0,
       room: 1,
     });
+  };
+
+  const handleSearch = () => {
+    navigate("./hotels", { state: { destination, date, options } });
   };
 
   return (
@@ -116,17 +122,26 @@ function Header({ type }) {
                   name="location"
                   id="location"
                   placeholder="Where are you going?"
+                  onChange={(e) => {
+                    setDestination(e.target.value);
+                  }}
                   className={search.input}
                 />
               </li>
               <li className={search.item}>
                 <FontAwesomeIcon
-                  onClick={() => setShowCalendar(!showCalendar)}
+                  onClick={() => {
+                    setShowCalendar(!showCalendar);
+                    setShowOptions(false);
+                  }}
                   icon={faCalendarDays}
                   className={search.icon}
                 />
                 <span
-                  onClick={() => setShowCalendar(!showCalendar)}
+                  onClick={() => {
+                    setShowCalendar(!showCalendar);
+                    setShowOptions(false);
+                  }}
                   className={search.text}
                 >
                   {`${format(date[0].startDate, "dd/MM/yyyy")} to ${format(
@@ -146,12 +161,18 @@ function Header({ type }) {
               </li>
               <li className={search.item}>
                 <FontAwesomeIcon
-                  onClick={() => setShowOptions(!showOptions)}
+                  onClick={() => {
+                    setShowOptions(!showOptions);
+                    setShowCalendar(false);
+                  }}
                   icon={faContactBook}
                   className={search.icon}
                 />
                 <span
-                  onClick={() => setShowOptions(!showOptions)}
+                  onClick={() => {
+                    setShowOptions(!showOptions);
+                    setShowCalendar(false);
+                  }}
                   className={search.text}
                 >
                   {`${options.adult} adult . ${options.children} children . ${options.room} room`}
@@ -243,7 +264,9 @@ function Header({ type }) {
                 )}
               </li>
               <li className={search.item}>
-                <button className={search.btn}>search</button>
+                <button onClick={() => handleSearch()} className={search.btn}>
+                  search
+                </button>
               </li>
             </ul>
           </section>
