@@ -45,11 +45,13 @@
 .options {
   composes: flex from "../../general.module.css";
   flex-flow: row wrap;
+  gap: 10px;
 }
 
 .option {
   width: 100%;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
+  border: 1px solid #000;
 }
 
 .option:not(:first-of-type) {
