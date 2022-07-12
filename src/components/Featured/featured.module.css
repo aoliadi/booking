@@ -2,16 +2,13 @@
 
 .container {
   z-index: 1;
-  composes: flex from "../../general.module.css";
-  flex-flow: column wrap;
-  /* align-items: center; */
-  gap: 1rem;
 }
 
 .list__container {
   composes: flex from "../../general.module.css";
   flex-flow: row wrap;
-  gap: 1.25rem;
+  /* border: 1px solid #000; */
+  /* gap: 1.25rem; */
   justify-content: center;
   z-index: 1;
 }
@@ -21,14 +18,17 @@
   min-width: 250px;
   max-width: 350px;
   overflow: hidden;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   border-radius: 0.625rem;
   position: relative;
   color: primary;
   height: 250px;
+  /* margin-top: 1rem; */
+  margin: 0.5rem;
 }
 
 .list__img {
+  object-fit: cover;
 }
 
 .list__label {

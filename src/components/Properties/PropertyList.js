@@ -1,6 +1,6 @@
 import properties from "./propertylist.module.css";
 
-function PropertyList() {
+function PropertyList({ imgUrls }) {
   const propertyListItems = [
     {
       quantity: 494537,
@@ -38,7 +38,7 @@ function PropertyList() {
             <li className={properties.list__item} key={index}>
               <figure>
                 <img
-                  src=""
+                  src={imgUrls[index]}
                   alt=""
                   className={properties.img}
                   width="100%"

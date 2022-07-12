@@ -1,6 +1,6 @@
 import featured from "./featuredProps.module.css";
 
-function FeaturedProps() {
+function FeaturedProps({ imgUrls }) {
   const propertyListItems = [
     {
       rating: 4.6,
@@ -57,7 +57,7 @@ function FeaturedProps() {
               <li className={featured.list__item} key={index}>
                 <figure>
                   <img
-                    src=""
+                    src={imgUrls[index]}
                     alt=""
                     className={featured.img}
                     width="100%"

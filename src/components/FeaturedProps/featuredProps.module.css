@@ -13,7 +13,6 @@
 }
 
 .list__item {
-  /* border: 1px solid #000; */
   text-align: center;
   composes: list__item from "../Properties/propertylist.module.css";
 }
@@ -27,6 +26,10 @@
 .list__item:not(:first-of-type) {
   min-width: 200px;
   max-width: 250px;
+}
+
+.img {
+  object-fit: cover;
 }
 
 .caption {

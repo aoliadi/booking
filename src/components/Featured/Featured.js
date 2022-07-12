@@ -1,6 +1,6 @@
 import featured from "./featured.module.css";
 
-function Featured() {
+function Featured({ imgUrls }) {
   const featuredListItems = [
     {
       name: "Jieshou",
@@ -50,7 +50,7 @@ function Featured() {
         {featuredListItems.map((item, index) => (
           <li className={featured.list__item} key={index}>
             <img
-              src=""
+              src={imgUrls[index]}
               alt=""
               width="100%"
               height="100%"
