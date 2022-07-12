@@ -43,9 +43,10 @@
 }
 
 .options {
-  composes: flex from "../../general.module.css";
-  flex-flow: row wrap;
+  composes: grid from "../../general.module.css";
+  /* flex-flow: row wrap; */
   gap: 10px;
+  /* gap: 10px; */
 }
 
 .option {
