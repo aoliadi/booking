@@ -1,0 +1,111 @@
+@value primary, secondary from "../../colors.module.css";
+
+.container {
+  border: 1px solid lightgray;
+  padding: 0.625rem;
+  border-radius: 5px;
+
+  composes: flex from "../../general.module.css";
+  justify-content: space-between;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.img {
+  object-fit: cover;
+}
+
+.desc {
+  composes: flex from "../../general.module.css";
+  flex-direction: column;
+  gap: 0.625rem;
+  flex: 2;
+}
+
+.heading {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  color: #0071c2;
+}
+
+.distance,
+.taxi,
+.subheading,
+.features,
+.cancel_option,
+.cancel_sub {
+  font-size: 0.75rem;
+}
+
+.taxi {
+  background-color: #008009;
+  color: secondary;
+  width: max-content;
+  padding: 3px 7px;
+  border-radius: 5px;
+}
+
+.subheading {
+  font-weight: bold;
+}
+
+.features {
+}
+
+.cancel_option {
+  color: #008009;
+  font-weight: bold;
+}
+
+.cancel_sub {
+  color: #008009;
+}
+
+.details {
+  flex: 1;
+  composes: flex from "../../general.module.css";
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rating {
+  composes: flex from "../../general.module.css";
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating > p {
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.rating > span {
+  font-size: 14px;
+  background-color: primary;
+  color: secondary;
+  padding: 6px;
+  font-weight: bold;
+}
+
+.detailsText {
+  text-align: right;
+}
+
+.price {
+  font-size: 1.5rem;
+}
+
+.tax {
+  font-size: 0.75rem;
+  color: gray;
+  margin-block: 0.75rem;
+}
+
+.btn {
+  composes: btn from "../../general.module.css";
+  color: secondary;
+  background-color: #0071c2;
+  width: 100%;
+  border-radius: 5px;
+}

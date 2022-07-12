@@ -16,5 +16,5 @@ flex > * {
 
 .flex > Main {
   flex: 3;
-  height: 200vh;
+  /* height: max-content; */
 }
