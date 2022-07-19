@@ -433,7 +433,7 @@ function FeaturedProps({ imgUrls }) {
                           ? "fair"
                           : rating > 4.5 && rating < 5.5
                           ? "good"
-                          : rating > 5.5 && rating < 6.5
+                          : rating > 5.5 && rating < 7.5
                           ? "wonderful"
                           : "excellent"}
                       </p>
